@@ -1,0 +1,55 @@
+{
+    "name": "basecodeoy/pennant",
+    "description": "Manage feature flags for users and groups.",
+    "license": "MIT",
+    "type": "library",
+    "keywords": [
+        "BaseCode Oy",
+        "laravel",
+        "pennant"
+    ],
+    "authors": [
+        {
+            "name": "Brian Faust",
+            "email": "hello@basecode.sh",
+            "role": "Developer"
+        }
+    ],
+    "homepage": "https://github.com/basecodeoy/xit",
+    "support": {
+        "issues": "https://github.com/basecodeoy/xit/issues",
+        "source": "https://github.com/basecodeoy/xit",
+        "security": "https://github.com/basecodeoy/xit/blob/main/.github/SECURITY.md"
+    },
+    "require": {
+        "php": "^8.3",
+        "ext-mbstring": "*",
+        "basecodeoy/crate": "^1.0.0"
+    },
+    "require-dev": {
+        "basecodeoy/standards": "^1.1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "BaseCodeOy\\Pennant\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "ergebnis/composer-normalize": true,
+            "infection/extension-installer": true,
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        },
+        "audit": {
+            "abandoned": "report"
+        },
+        "preferred-install": "dist",
+        "sort-packages": true
+    }
+}

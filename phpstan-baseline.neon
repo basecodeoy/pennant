@@ -1,0 +1,181 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Cannot call method in\\(\\) on iterable\\<SplFileInfo\\>\\.$#"
+			count: 1
+			path: .php-cs-fixer.php
+
+		-
+			message: "#^Class BaseCodeOy\\\\Xit\\\\Data\\\\Document implements generic interface Illuminate\\\\Contracts\\\\Support\\\\Arrayable but does not specify its types\\: TKey, TValue$#"
+			count: 1
+			path: src/Data/Document.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Xit\\\\Data\\\\Document\\:\\:jsonSerialize\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Data/Document.php
+
+		-
+			message: "#^Class BaseCodeOy\\\\Xit\\\\Data\\\\DocumentGroup implements generic interface Illuminate\\\\Contracts\\\\Support\\\\Arrayable but does not specify its types\\: TKey, TValue$#"
+			count: 1
+			path: src/Data/DocumentGroup.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Xit\\\\Data\\\\DocumentGroup\\:\\:getTitle\\(\\) should return string but returns string\\|null\\.$#"
+			count: 1
+			path: src/Data/DocumentGroup.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Xit\\\\Data\\\\DocumentGroup\\:\\:jsonSerialize\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Data/DocumentGroup.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Xit\\\\Data\\\\DocumentGroup\\:\\:setItems\\(\\) has parameter \\$items with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Data/DocumentGroup.php
+
+		-
+			message: "#^Class BaseCodeOy\\\\Xit\\\\Data\\\\DocumentItem implements generic interface Illuminate\\\\Contracts\\\\Support\\\\Arrayable but does not specify its types\\: TKey, TValue$#"
+			count: 1
+			path: src/Data/DocumentItem.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Xit\\\\Data\\\\DocumentItem\\:\\:jsonSerialize\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Data/DocumentItem.php
+
+		-
+			message: "#^Class BaseCodeOy\\\\Xit\\\\Data\\\\DocumentItemModifiers implements generic interface Illuminate\\\\Contracts\\\\Support\\\\Arrayable but does not specify its types\\: TKey, TValue$#"
+			count: 1
+			path: src/Data/DocumentItemModifiers.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Xit\\\\Data\\\\DocumentItemModifiers\\:\\:__construct\\(\\) has parameter \\$tags with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Data/DocumentItemModifiers.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Xit\\\\Data\\\\DocumentItemModifiers\\:\\:getTags\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Data/DocumentItemModifiers.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Xit\\\\Data\\\\DocumentItemModifiers\\:\\:jsonSerialize\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Data/DocumentItemModifiers.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Xit\\\\Data\\\\DocumentItemModifiers\\:\\:setTags\\(\\) has parameter \\$tags with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Data/DocumentItemModifiers.php
+
+		-
+			message: "#^Unsafe usage of new static\\(\\)\\.$#"
+			count: 1
+			path: src/Element/AbstractElement.php
+
+		-
+			message: "#^Only booleans are allowed in &&, int\\|false given on the right side\\.$#"
+			count: 1
+			path: src/Parser/DocumentParser.php
+
+		-
+			message: "#^Only booleans are allowed in an if condition, int\\|false given\\.$#"
+			count: 7
+			path: src/Parser/DocumentParser.php
+
+		-
+			message: "#^Parameter \\#1 \\$content of method BaseCodeOy\\\\Xit\\\\Parser\\\\ModifierParser\\:\\:parse\\(\\) expects string, string\\|null given\\.$#"
+			count: 1
+			path: src/Parser/DocumentParser.php
+
+		-
+			message: "#^Cannot call method getDue\\(\\) on BaseCodeOy\\\\Xit\\\\Data\\\\DocumentItemModifiers\\|null\\.$#"
+			count: 3
+			path: src/Renderer/AbstractHtmlRenderer.php
+
+		-
+			message: "#^Cannot call method getHasPriority\\(\\) on BaseCodeOy\\\\Xit\\\\Data\\\\DocumentItemModifiers\\|null\\.$#"
+			count: 1
+			path: src/Renderer/AbstractHtmlRenderer.php
+
+		-
+			message: "#^Cannot call method getPriorityLevel\\(\\) on BaseCodeOy\\\\Xit\\\\Data\\\\DocumentItemModifiers\\|null\\.$#"
+			count: 1
+			path: src/Renderer/AbstractHtmlRenderer.php
+
+		-
+			message: "#^Cannot call method getPriorityPadding\\(\\) on BaseCodeOy\\\\Xit\\\\Data\\\\DocumentItemModifiers\\|null\\.$#"
+			count: 1
+			path: src/Renderer/AbstractHtmlRenderer.php
+
+		-
+			message: "#^Cannot call method getTags\\(\\) on BaseCodeOy\\\\Xit\\\\Data\\\\DocumentItemModifiers\\|null\\.$#"
+			count: 1
+			path: src/Renderer/AbstractHtmlRenderer.php
+
+		-
+			message: "#^Parameter \\#1 \\$itemStatus of method BaseCodeOy\\\\Xit\\\\Renderer\\\\AbstractHtmlRenderer\\:\\:renderItem\\(\\) expects BaseCodeOy\\\\Xit\\\\Enum\\\\ItemStatus, BaseCodeOy\\\\Xit\\\\Enum\\\\ItemStatus\\|null given\\.$#"
+			count: 2
+			path: src/Renderer/AbstractHtmlRenderer.php
+
+		-
+			message: "#^Parameter \\#1 \\$text of method BaseCodeOy\\\\Xit\\\\Renderer\\\\AbstractHtmlRenderer\\:\\:createTitleElement\\(\\) expects string, string\\|null given\\.$#"
+			count: 1
+			path: src/Renderer/AbstractHtmlRenderer.php
+
+		-
+			message: "#^Parameter \\#3 \\$subject of function str_replace expects array\\|string, string\\|null given\\.$#"
+			count: 3
+			path: src/Renderer/AbstractHtmlRenderer.php
+
+		-
+			message: "#^Variable \\$currentItemStatus might not be defined\\.$#"
+			count: 2
+			path: src/Renderer/AbstractHtmlRenderer.php
+
+		-
+			message: "#^Cannot call method getDue\\(\\) on BaseCodeOy\\\\Xit\\\\Data\\\\DocumentItemModifiers\\|null\\.$#"
+			count: 2
+			path: src/Renderer/TextRenderer.php
+
+		-
+			message: "#^Cannot call method getHasPriority\\(\\) on BaseCodeOy\\\\Xit\\\\Data\\\\DocumentItemModifiers\\|null\\.$#"
+			count: 1
+			path: src/Renderer/TextRenderer.php
+
+		-
+			message: "#^Cannot call method getPriorityLevel\\(\\) on BaseCodeOy\\\\Xit\\\\Data\\\\DocumentItemModifiers\\|null\\.$#"
+			count: 1
+			path: src/Renderer/TextRenderer.php
+
+		-
+			message: "#^Cannot call method getPriorityPadding\\(\\) on BaseCodeOy\\\\Xit\\\\Data\\\\DocumentItemModifiers\\|null\\.$#"
+			count: 1
+			path: src/Renderer/TextRenderer.php
+
+		-
+			message: "#^Cannot call method getTags\\(\\) on BaseCodeOy\\\\Xit\\\\Data\\\\DocumentItemModifiers\\|null\\.$#"
+			count: 2
+			path: src/Renderer/TextRenderer.php
+
+		-
+			message: "#^Instanceof between BaseCodeOy\\\\Xit\\\\Enum\\\\ItemType\\:\\:ItemContinuation and BaseCodeOy\\\\Xit\\\\Enum\\\\ItemType will always evaluate to true\\.$#"
+			count: 1
+			path: src/Renderer/TextRenderer.php
+
+		-
+			message: "#^Result of \\|\\| is always true\\.$#"
+			count: 1
+			path: src/Renderer/TextRenderer.php
+
+		-
+			message: "#^Function xit\\(\\) should return string but returns string\\|false\\.$#"
+			count: 1
+			path: tests/Pest.php
+
+		-
+			message: "#^Undefined variable\\: \\$this$#"
+			count: 1
+			path: tests/Pest.php

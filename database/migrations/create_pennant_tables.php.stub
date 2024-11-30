@@ -1,0 +1,64 @@
+<?php declare(strict_types=1);
+
+/**
+ * Copyright (C) BaseCode Oy - All Rights Reserved
+ *
+ * For the full copyright and license information, please view
+ * the LICENSE file that was distributed with this source code.
+ */
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class() extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::create('feature_flags', function (Blueprint $table): void {
+            $table->ulid('id')->primary();
+            $table->string('name');
+            $table->text('description')->nullable();
+            $table->string('state');
+            $table->timestamp('expires_at')->nullable();
+            $table->timestamps();
+        });
+
+        Schema::create('feature_flag_groups', function (Blueprint $table): void {
+            $table->ulid('id')->primary();
+            $table->string('name');
+            $table->text('description')->nullable();
+            $table->string('state');
+            $table->timestamp('expires_at')->nullable();
+            $table->timestamps();
+        });
+
+        Schema::create('feature_flag_group_members', function (Blueprint $table): void {
+            $table->ulid('id')->primary();
+            $table->foreignUlid('feature_flag_group_id')->constrained()->cascadeOnDelete();
+            $table->ulidMorphs('model');
+            $table->timestamps();
+        });
+
+        Schema::create('model_has_feature_flags', function (Blueprint $table): void {
+            $table->id();
+            $table->foreignUlid('feature_flag_id')->constrained()->cascadeOnDelete();
+            $table->ulidMorphs('model');
+            $table->timestamps();
+
+            $table->unique(['feature_flag_id', 'model_type', 'model_id']);
+        });
+
+        Schema::create('model_has_feature_flag_groups', function (Blueprint $table): void {
+            $table->id();
+            $table->foreignUlid('feature_flag_group_id')->constrained()->cascadeOnDelete();
+            $table->ulidMorphs('model');
+            $table->timestamps();
+
+            $table->unique(['feature_flag_group_id', 'model_type', 'model_id']);
+        });
+    }
+};

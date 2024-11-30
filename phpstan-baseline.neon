@@ -1,0 +1,391 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Cannot call method in\\(\\) on iterable\\<SplFileInfo\\>\\.$#"
+			count: 1
+			path: .php-cs-fixer.php
+
+		-
+			message: "#^Class BaseCodeOy\\\\Pennant\\\\Builders\\\\FeatureFlagBuilder extends generic class Illuminate\\\\Database\\\\Eloquent\\\\Builder but does not specify its types\\: TModel$#"
+			count: 1
+			path: src/Builders/FeatureFlagBuilder.php
+
+		-
+			message: "#^Dynamic call to static method BaseCodeOy\\\\Pennant\\\\Builders\\\\FeatureFlagBuilder\\:\\:whereState\\(\\)\\.$#"
+			count: 3
+			path: src/Builders/FeatureFlagBuilder.php
+
+		-
+			message: "#^Class BaseCodeOy\\\\Pennant\\\\Builders\\\\FeatureFlagGroupBuilder extends generic class Illuminate\\\\Database\\\\Eloquent\\\\Builder but does not specify its types\\: TModel$#"
+			count: 1
+			path: src/Builders/FeatureFlagGroupBuilder.php
+
+		-
+			message: "#^Dynamic call to static method BaseCodeOy\\\\Pennant\\\\Builders\\\\FeatureFlagGroupBuilder\\:\\:whereState\\(\\)\\.$#"
+			count: 3
+			path: src/Builders/FeatureFlagGroupBuilder.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Pennant\\\\Contracts\\\\HasFeatureFlagsInterface\\:\\:featureFlags\\(\\) return type with generic class Illuminate\\\\Database\\\\Eloquent\\\\Relations\\\\MorphToMany does not specify its types\\: TRelatedModel, TDeclaringModel$#"
+			count: 1
+			path: src/Contracts/HasFeatureFlagsInterface.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Pennant\\\\Contracts\\\\HasFeatureFlagsInterface\\:\\:featureFlagsGroups\\(\\) return type with generic class Illuminate\\\\Database\\\\Eloquent\\\\Relations\\\\MorphToMany does not specify its types\\: TRelatedModel, TDeclaringModel$#"
+			count: 1
+			path: src/Contracts/HasFeatureFlagsInterface.php
+
+		-
+			message: "#^Class BaseCodeOy\\\\Pennant\\\\Database\\\\Factories\\\\FeatureFlagFactory extends generic class Illuminate\\\\Database\\\\Eloquent\\\\Factories\\\\Factory but does not specify its types\\: TModel$#"
+			count: 1
+			path: src/Database/Factories/FeatureFlagFactory.php
+
+		-
+			message: "#^Class BaseCodeOy\\\\Pennant\\\\Database\\\\Factories\\\\FeatureFlagGroupFactory extends generic class Illuminate\\\\Database\\\\Eloquent\\\\Factories\\\\Factory but does not specify its types\\: TModel$#"
+			count: 1
+			path: src/Database/Factories/FeatureFlagGroupFactory.php
+
+		-
+			message: "#^Class BaseCodeOy\\\\Pennant\\\\Database\\\\Factories\\\\FeatureFlagGroupMemberFactory extends generic class Illuminate\\\\Database\\\\Eloquent\\\\Factories\\\\Factory but does not specify its types\\: TModel$#"
+			count: 1
+			path: src/Database/Factories/FeatureFlagGroupMemberFactory.php
+
+		-
+			message: "#^Class BaseCodeOy\\\\Pennant\\\\Models\\\\FeatureFlag uses generic trait Illuminate\\\\Database\\\\Eloquent\\\\Factories\\\\HasFactory but does not specify its types\\: TFactory$#"
+			count: 1
+			path: src/Models/FeatureFlag.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Pennant\\\\Models\\\\FeatureFlag\\:\\:models\\(\\) return type with generic class Illuminate\\\\Database\\\\Eloquent\\\\Relations\\\\MorphToMany does not specify its types\\: TRelatedModel, TDeclaringModel$#"
+			count: 1
+			path: src/Models/FeatureFlag.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Pennant\\\\Models\\\\FeatureFlag\\:\\:newFactory\\(\\) return type with generic class Illuminate\\\\Database\\\\Eloquent\\\\Factories\\\\Factory does not specify its types\\: TModel$#"
+			count: 1
+			path: src/Models/FeatureFlag.php
+
+		-
+			message: "#^Class BaseCodeOy\\\\Pennant\\\\Models\\\\FeatureFlagGroup uses generic trait Illuminate\\\\Database\\\\Eloquent\\\\Factories\\\\HasFactory but does not specify its types\\: TFactory$#"
+			count: 1
+			path: src/Models/FeatureFlagGroup.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Pennant\\\\Models\\\\FeatureFlagGroup\\:\\:featureFlags\\(\\) return type with generic class Illuminate\\\\Database\\\\Eloquent\\\\Relations\\\\MorphToMany does not specify its types\\: TRelatedModel, TDeclaringModel$#"
+			count: 1
+			path: src/Models/FeatureFlagGroup.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Pennant\\\\Models\\\\FeatureFlagGroup\\:\\:featureFlagsGroups\\(\\) return type with generic class Illuminate\\\\Database\\\\Eloquent\\\\Relations\\\\MorphToMany does not specify its types\\: TRelatedModel, TDeclaringModel$#"
+			count: 1
+			path: src/Models/FeatureFlagGroup.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Pennant\\\\Models\\\\FeatureFlagGroup\\:\\:members\\(\\) return type with generic class Illuminate\\\\Database\\\\Eloquent\\\\Relations\\\\HasMany does not specify its types\\: TRelatedModel, TDeclaringModel$#"
+			count: 1
+			path: src/Models/FeatureFlagGroup.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Pennant\\\\Models\\\\FeatureFlagGroup\\:\\:newFactory\\(\\) return type with generic class Illuminate\\\\Database\\\\Eloquent\\\\Factories\\\\Factory does not specify its types\\: TModel$#"
+			count: 1
+			path: src/Models/FeatureFlagGroup.php
+
+		-
+			message: "#^Class BaseCodeOy\\\\Pennant\\\\Models\\\\FeatureFlagGroupMember uses generic trait Illuminate\\\\Database\\\\Eloquent\\\\Factories\\\\HasFactory but does not specify its types\\: TFactory$#"
+			count: 1
+			path: src/Models/FeatureFlagGroupMember.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Pennant\\\\Models\\\\FeatureFlagGroupMember\\:\\:featureFlagGroup\\(\\) return type with generic class Illuminate\\\\Database\\\\Eloquent\\\\Relations\\\\BelongsTo does not specify its types\\: TRelatedModel, TDeclaringModel$#"
+			count: 1
+			path: src/Models/FeatureFlagGroupMember.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Pennant\\\\Models\\\\FeatureFlagGroupMember\\:\\:featureFlags\\(\\) return type with generic class Illuminate\\\\Database\\\\Eloquent\\\\Relations\\\\MorphToMany does not specify its types\\: TRelatedModel, TDeclaringModel$#"
+			count: 1
+			path: src/Models/FeatureFlagGroupMember.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Pennant\\\\Models\\\\FeatureFlagGroupMember\\:\\:featureFlagsGroups\\(\\) return type with generic class Illuminate\\\\Database\\\\Eloquent\\\\Relations\\\\MorphToMany does not specify its types\\: TRelatedModel, TDeclaringModel$#"
+			count: 1
+			path: src/Models/FeatureFlagGroupMember.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Pennant\\\\Models\\\\FeatureFlagGroupMember\\:\\:newFactory\\(\\) return type with generic class Illuminate\\\\Database\\\\Eloquent\\\\Factories\\\\Factory does not specify its types\\: TModel$#"
+			count: 1
+			path: src/Models/FeatureFlagGroupMember.php
+
+		-
+			message: "#^Access to an undefined property BaseCodeOy\\\\Pennant\\\\Contracts\\\\HasFeatureFlagsInterface\\:\\:\\$id\\.$#"
+			count: 2
+			path: src/Repositories/FeatureFlagGroupRepository.php
+
+		-
+			message: "#^Call to an undefined method Illuminate\\\\Database\\\\Eloquent\\\\Relations\\\\MorphToMany\\:\\:active\\(\\)\\.$#"
+			count: 1
+			path: src/Repositories/FeatureFlagGroupRepository.php
+
+		-
+			message: "#^Dynamic call to static method BaseCodeOy\\\\Pennant\\\\Builders\\\\FeatureFlagGroupBuilder\\:\\:whereIn\\(\\)\\.$#"
+			count: 1
+			path: src/Repositories/FeatureFlagGroupRepository.php
+
+		-
+			message: "#^Dynamic call to static method Illuminate\\\\Database\\\\Eloquent\\\\Builder\\<BaseCodeOy\\\\Pennant\\\\Models\\\\FeatureFlagGroupMember\\>\\:\\:delete\\(\\)\\.$#"
+			count: 1
+			path: src/Repositories/FeatureFlagGroupRepository.php
+
+		-
+			message: "#^Dynamic call to static method Illuminate\\\\Database\\\\Eloquent\\\\Builder\\<BaseCodeOy\\\\Pennant\\\\Models\\\\FeatureFlagGroupMember\\>\\:\\:where\\(\\)\\.$#"
+			count: 1
+			path: src/Repositories/FeatureFlagGroupRepository.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Pennant\\\\Repositories\\\\FeatureFlagGroupRepository\\:\\:all\\(\\) has parameter \\$groups with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Repositories/FeatureFlagGroupRepository.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Pennant\\\\Repositories\\\\FeatureFlagGroupRepository\\:\\:all\\(\\) return type with generic class Illuminate\\\\Database\\\\Eloquent\\\\Collection does not specify its types\\: TKey, TModel$#"
+			count: 1
+			path: src/Repositories/FeatureFlagGroupRepository.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Pennant\\\\Repositories\\\\FeatureFlagGroupRepository\\:\\:everything\\(\\) has parameter \\$groups with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Repositories/FeatureFlagGroupRepository.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Pennant\\\\Repositories\\\\FeatureFlagGroupRepository\\:\\:everything\\(\\) return type with generic class Illuminate\\\\Database\\\\Eloquent\\\\Collection does not specify its types\\: TKey, TModel$#"
+			count: 1
+			path: src/Repositories/FeatureFlagGroupRepository.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Pennant\\\\Repositories\\\\FeatureFlagGroupRepository\\:\\:has\\(\\) has parameter \\$groups with no type specified\\.$#"
+			count: 1
+			path: src/Repositories/FeatureFlagGroupRepository.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Pennant\\\\Repositories\\\\FeatureFlagGroupRepository\\:\\:join\\(\\) has parameter \\$groups with no type specified\\.$#"
+			count: 1
+			path: src/Repositories/FeatureFlagGroupRepository.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Pennant\\\\Repositories\\\\FeatureFlagGroupRepository\\:\\:leave\\(\\) has parameter \\$groups with no type specified\\.$#"
+			count: 1
+			path: src/Repositories/FeatureFlagGroupRepository.php
+
+		-
+			message: "#^Call to an undefined method Illuminate\\\\Database\\\\Eloquent\\\\Relations\\\\MorphToMany\\:\\:active\\(\\)\\.$#"
+			count: 1
+			path: src/Repositories/FeatureFlagRepository.php
+
+		-
+			message: "#^Dynamic call to static method BaseCodeOy\\\\Pennant\\\\Builders\\\\FeatureFlagBuilder\\:\\:active\\(\\)\\.$#"
+			count: 1
+			path: src/Repositories/FeatureFlagRepository.php
+
+		-
+			message: "#^Dynamic call to static method BaseCodeOy\\\\Pennant\\\\Builders\\\\FeatureFlagBuilder\\:\\:whereIn\\(\\)\\.$#"
+			count: 1
+			path: src/Repositories/FeatureFlagRepository.php
+
+		-
+			message: "#^Dynamic call to static method Illuminate\\\\Database\\\\Eloquent\\\\Builder\\<Illuminate\\\\Database\\\\Eloquent\\\\Model\\>\\:\\:whereHas\\(\\)\\.$#"
+			count: 1
+			path: src/Repositories/FeatureFlagRepository.php
+
+		-
+			message: "#^Dynamic call to static method Illuminate\\\\Database\\\\Eloquent\\\\Builder\\<Illuminate\\\\Database\\\\Eloquent\\\\Model\\>\\:\\:whereIn\\(\\)\\.$#"
+			count: 1
+			path: src/Repositories/FeatureFlagRepository.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Pennant\\\\Repositories\\\\FeatureFlagRepository\\:\\:activate\\(\\) has parameter \\$features with no type specified\\.$#"
+			count: 1
+			path: src/Repositories/FeatureFlagRepository.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Pennant\\\\Repositories\\\\FeatureFlagRepository\\:\\:all\\(\\) has parameter \\$features with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Repositories/FeatureFlagRepository.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Pennant\\\\Repositories\\\\FeatureFlagRepository\\:\\:all\\(\\) return type with generic class Illuminate\\\\Database\\\\Eloquent\\\\Collection does not specify its types\\: TKey, TModel$#"
+			count: 1
+			path: src/Repositories/FeatureFlagRepository.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Pennant\\\\Repositories\\\\FeatureFlagRepository\\:\\:allAreActive\\(\\) has parameter \\$features with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Repositories/FeatureFlagRepository.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Pennant\\\\Repositories\\\\FeatureFlagRepository\\:\\:allAreActiveThroughAnyGroup\\(\\) has parameter \\$features with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Repositories/FeatureFlagRepository.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Pennant\\\\Repositories\\\\FeatureFlagRepository\\:\\:allAreActiveThroughGroup\\(\\) has parameter \\$features with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Repositories/FeatureFlagRepository.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Pennant\\\\Repositories\\\\FeatureFlagRepository\\:\\:allAreInactive\\(\\) has parameter \\$features with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Repositories/FeatureFlagRepository.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Pennant\\\\Repositories\\\\FeatureFlagRepository\\:\\:allAreInactiveThroughAnyGroup\\(\\) has parameter \\$features with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Repositories/FeatureFlagRepository.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Pennant\\\\Repositories\\\\FeatureFlagRepository\\:\\:allAreInactiveThroughGroup\\(\\) has parameter \\$features with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Repositories/FeatureFlagRepository.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Pennant\\\\Repositories\\\\FeatureFlagRepository\\:\\:allByGroup\\(\\) has parameter \\$features with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Repositories/FeatureFlagRepository.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Pennant\\\\Repositories\\\\FeatureFlagRepository\\:\\:allByGroup\\(\\) return type with generic class Illuminate\\\\Database\\\\Eloquent\\\\Collection does not specify its types\\: TKey, TModel$#"
+			count: 1
+			path: src/Repositories/FeatureFlagRepository.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Pennant\\\\Repositories\\\\FeatureFlagRepository\\:\\:allByGroups\\(\\) has parameter \\$features with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Repositories/FeatureFlagRepository.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Pennant\\\\Repositories\\\\FeatureFlagRepository\\:\\:allByGroups\\(\\) return type with generic class Illuminate\\\\Database\\\\Eloquent\\\\Collection does not specify its types\\: TKey, TModel$#"
+			count: 1
+			path: src/Repositories/FeatureFlagRepository.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Pennant\\\\Repositories\\\\FeatureFlagRepository\\:\\:deactivate\\(\\) has parameter \\$features with no type specified\\.$#"
+			count: 1
+			path: src/Repositories/FeatureFlagRepository.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Pennant\\\\Repositories\\\\FeatureFlagRepository\\:\\:someAreActive\\(\\) has parameter \\$features with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Repositories/FeatureFlagRepository.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Pennant\\\\Repositories\\\\FeatureFlagRepository\\:\\:someAreActiveThroughAnyGroup\\(\\) has parameter \\$features with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Repositories/FeatureFlagRepository.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Pennant\\\\Repositories\\\\FeatureFlagRepository\\:\\:someAreActiveThroughGroup\\(\\) has parameter \\$features with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Repositories/FeatureFlagRepository.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Pennant\\\\Repositories\\\\FeatureFlagRepository\\:\\:someAreInactive\\(\\) has parameter \\$features with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Repositories/FeatureFlagRepository.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Pennant\\\\Repositories\\\\FeatureFlagRepository\\:\\:someAreInactiveThroughAnyGroup\\(\\) has parameter \\$features with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Repositories/FeatureFlagRepository.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Pennant\\\\Repositories\\\\FeatureFlagRepository\\:\\:someAreInactiveThroughGroup\\(\\) has parameter \\$features with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Repositories/FeatureFlagRepository.php
+
+		-
+			message: "#^Class BaseCodeOy\\\\Pennant\\\\States\\\\AbstractState extends generic class Spatie\\\\ModelStates\\\\State but does not specify its types\\: TModel$#"
+			count: 1
+			path: src/States/AbstractState.php
+
+		-
+			message: "#^Method Tests\\\\Models\\\\User\\:\\:featureFlags\\(\\) return type with generic class Illuminate\\\\Database\\\\Eloquent\\\\Relations\\\\MorphToMany does not specify its types\\: TRelatedModel, TDeclaringModel$#"
+			count: 1
+			path: tests/Models/User.php
+
+		-
+			message: "#^Method Tests\\\\Models\\\\User\\:\\:featureFlagsGroups\\(\\) return type with generic class Illuminate\\\\Database\\\\Eloquent\\\\Relations\\\\MorphToMany does not specify its types\\: TRelatedModel, TDeclaringModel$#"
+			count: 1
+			path: tests/Models/User.php
+
+		-
+			message: "#^Access to an undefined property Illuminate\\\\Foundation\\\\Application\\:\\:\\$config\\.$#"
+			count: 7
+			path: tests/TestCase.php
+
+		-
+			message: "#^Parameter \\#1 \\$path of method Illuminate\\\\Foundation\\\\Application\\:\\:useStoragePath\\(\\) expects string, string\\|false given\\.$#"
+			count: 1
+			path: tests/TestCase.php
+
+		-
+			message: "#^Access to an undefined property BaseCodeOy\\\\Pennant\\\\Models\\\\FeatureFlag\\:\\:\\$description\\.$#"
+			count: 8
+			path: tests/Unit/Repositories/FeatureFlagRepositoryTest.php
+
+		-
+			message: "#^Access to an undefined property BaseCodeOy\\\\Pennant\\\\Models\\\\FeatureFlag\\:\\:\\$name\\.$#"
+			count: 22
+			path: tests/Unit/Repositories/FeatureFlagRepositoryTest.php
+
+		-
+			message: "#^Access to an undefined property BaseCodeOy\\\\Pennant\\\\Models\\\\FeatureFlag\\:\\:\\$state\\.$#"
+			count: 8
+			path: tests/Unit/Repositories/FeatureFlagRepositoryTest.php
+
+		-
+			message: "#^Cannot access property \\$description on BaseCodeOy\\\\Pennant\\\\Models\\\\FeatureFlag\\|null\\.$#"
+			count: 6
+			path: tests/Unit/Repositories/FeatureFlagRepositoryTest.php
+
+		-
+			message: "#^Cannot access property \\$description on Illuminate\\\\Database\\\\Eloquent\\\\Model\\|null\\.$#"
+			count: 2
+			path: tests/Unit/Repositories/FeatureFlagRepositoryTest.php
+
+		-
+			message: "#^Cannot access property \\$name on BaseCodeOy\\\\Pennant\\\\Models\\\\FeatureFlag\\|null\\.$#"
+			count: 6
+			path: tests/Unit/Repositories/FeatureFlagRepositoryTest.php
+
+		-
+			message: "#^Cannot access property \\$name on Illuminate\\\\Database\\\\Eloquent\\\\Model\\|null\\.$#"
+			count: 2
+			path: tests/Unit/Repositories/FeatureFlagRepositoryTest.php
+
+		-
+			message: "#^Cannot access property \\$state on BaseCodeOy\\\\Pennant\\\\Models\\\\FeatureFlag\\|null\\.$#"
+			count: 6
+			path: tests/Unit/Repositories/FeatureFlagRepositoryTest.php
+
+		-
+			message: "#^Cannot access property \\$state on Illuminate\\\\Database\\\\Eloquent\\\\Model\\|null\\.$#"
+			count: 2
+			path: tests/Unit/Repositories/FeatureFlagRepositoryTest.php
+
+		-
+			message: "#^Dynamic call to static method BaseCodeOy\\\\Pennant\\\\Builders\\\\FeatureFlagBuilder\\:\\:count\\(\\)\\.$#"
+			count: 6
+			path: tests/Unit/Repositories/FeatureFlagRepositoryTest.php
+
+		-
+			message: "#^Dynamic call to static method BaseCodeOy\\\\Pennant\\\\Builders\\\\FeatureFlagBuilder\\:\\:orderBy\\(\\)\\.$#"
+			count: 6
+			path: tests/Unit/Repositories/FeatureFlagRepositoryTest.php
+
+		-
+			message: "#^Dynamic call to static method BaseCodeOy\\\\Pennant\\\\Builders\\\\FeatureFlagBuilder\\:\\:orderByDesc\\(\\)\\.$#"
+			count: 6
+			path: tests/Unit/Repositories/FeatureFlagRepositoryTest.php
+
+		-
+			message: "#^Unable to resolve the template type TValue in call to function expect$#"
+			count: 16
+			path: tests/Unit/Repositories/FeatureFlagRepositoryTest.php

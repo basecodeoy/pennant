@@ -1,0 +1,23 @@
+{
+    "symbol-whitelist": [
+        "array",
+        "bool",
+        "false",
+        "int",
+        "null",
+        "self",
+        "string",
+        "true",
+        "Illuminate\\Database\\Eloquent\\Builder",
+        "Illuminate\\Database\\Eloquent\\Collection",
+        "Illuminate\\Database\\Eloquent\\Concerns\\HasUlids",
+        "Illuminate\\Database\\Eloquent\\Factories\\Factory",
+        "Illuminate\\Database\\Eloquent\\Factories\\HasFactory",
+        "Illuminate\\Database\\Eloquent\\Model",
+        "Illuminate\\Database\\Eloquent\\Relations\\BelongsTo",
+        "Illuminate\\Database\\Eloquent\\Relations\\HasMany",
+        "Illuminate\\Database\\Eloquent\\Relations\\MorphToMany",
+        "Illuminate\\Support\\Facades\\Facade",
+        "str"
+    ]
+}

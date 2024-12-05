@@ -1,11 +1,13 @@
 {
     "symbol-whitelist": [
         "array",
+        "base_path",
         "bool",
         "false",
         "int",
         "null",
         "self",
+        "str",
         "string",
         "true",
         "Illuminate\\Database\\Eloquent\\Builder",
@@ -17,7 +19,12 @@
         "Illuminate\\Database\\Eloquent\\Relations\\BelongsTo",
         "Illuminate\\Database\\Eloquent\\Relations\\HasMany",
         "Illuminate\\Database\\Eloquent\\Relations\\MorphToMany",
+        "Illuminate\\Support\\Arr",
+        "Illuminate\\Support\\Collection",
+        "Illuminate\\Support\\Facades\\App",
         "Illuminate\\Support\\Facades\\Facade",
-        "str"
+        "Illuminate\\Support\\Str",
+        "Illuminate\\Support\\Traits\\ForwardsCalls",
+        "Symfony\\Component\\Finder\\Finder"
     ]
 }

@@ -14,11 +14,6 @@ use BaseCodeOy\Pennant\Models\FeatureFlagGroup;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 
-// * @method static void discover(string $namespace = 'App\\Features', string|null $path = null)
-// * @method static void activateForEveryone(string|array $feature, mixed $value = true)
-// * @method static void deactivateForEveryone(string|array $feature)
-// * @method static void purge(string|array|null $features = null)
-
 final readonly class FeatureFlagRepository
 {
     public function __construct(
@@ -174,5 +169,20 @@ final readonly class FeatureFlagRepository
         $this->hasFeatureFlags->featureFlags()->detach($features);
 
         return $this;
+    }
+
+    public function activateForEveryone(): self
+    {
+        throw new \RuntimeException('Not implemented');
+    }
+
+    public function deactivateForEveryone(): self
+    {
+        throw new \RuntimeException('Not implemented');
+    }
+
+    public function purge(): self
+    {
+        throw new \RuntimeException('Not implemented');
     }
 }

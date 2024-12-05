@@ -46,6 +46,7 @@ abstract class TestCase extends AbstractTestCase
         Schema::create('users', function (Blueprint $blueprint): void {
             $blueprint->ulid('id')->primary();
             $blueprint->string('name');
+            $blueprint->boolean('is_high_traffic_customer')->default(false);
             $blueprint->timestamps();
         });
 

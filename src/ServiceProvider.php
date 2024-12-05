@@ -14,8 +14,5 @@ use BaseCodeOy\Crate\Package\AbstractServiceProvider;
 final class ServiceProvider extends AbstractServiceProvider
 {
     #[\Override()]
-    public function packageRegistered(): void
-    {
-        //
-    }
+    public function packageRegistered(): void {}
 }

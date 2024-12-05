@@ -9,10 +9,9 @@
 
 namespace BaseCodeOy\Pennant\Concerns;
 
-use BaseCodeOy\Pennant\Facades\FeatureFlag as Facade;
 use BaseCodeOy\Pennant\Models\FeatureFlag;
 use BaseCodeOy\Pennant\Models\FeatureFlagGroup;
-use BaseCodeOy\Pennant\Repositories\FeatureFlagRepository;
+use BaseCodeOy\Pennant\Services\FeatureFlagService;
 use Illuminate\Database\Eloquent\Relations\MorphToMany;
 
 trait HasFeatureFlags
@@ -39,8 +38,8 @@ trait HasFeatureFlags
         );
     }
 
-    public function features(): FeatureFlagRepository
+    public function features(): FeatureFlagService
     {
-        return Facade::for($this);
+        return FeatureFlagService::for($this);
     }
 }

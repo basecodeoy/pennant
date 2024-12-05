@@ -301,9 +301,29 @@ parameters:
 			path: src/Repositories/FeatureFlagRepository.php
 
 		-
+			message: "#^Method BaseCodeOy\\\\Pennant\\\\Services\\\\FeatureFlagService\\:\\:__call\\(\\) has parameter \\$arguments with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/FeatureFlagService.php
+
+		-
+			message: "#^Parameter \\#1 \\$callback of function call_user_func_array expects callable\\(\\)\\: mixed, array\\{BaseCodeOy\\\\Pennant\\\\Repositories\\\\FeatureFlagRepository, string\\} given\\.$#"
+			count: 1
+			path: src/Services/FeatureFlagService.php
+
+		-
+			message: "#^Property BaseCodeOy\\\\Pennant\\\\Services\\\\FeatureFlagService\\:\\:\\$featureStateResolvers type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/FeatureFlagService.php
+
+		-
 			message: "#^Class BaseCodeOy\\\\Pennant\\\\States\\\\AbstractState extends generic class Spatie\\\\ModelStates\\\\State but does not specify its types\\: TModel$#"
 			count: 1
 			path: src/States/AbstractState.php
+
+		-
+			message: "#^Access to an undefined property BaseCodeOy\\\\Pennant\\\\Contracts\\\\HasFeatureFlagsInterface\\:\\:\\$is_high_traffic_customer\\.$#"
+			count: 1
+			path: tests/Fixtures/Features/NewFeature.php
 
 		-
 			message: "#^Method Tests\\\\Models\\\\User\\:\\:featureFlags\\(\\) return type with generic class Illuminate\\\\Database\\\\Eloquent\\\\Relations\\\\MorphToMany does not specify its types\\: TRelatedModel, TDeclaringModel$#"
@@ -346,7 +366,7 @@ parameters:
 			path: tests/Unit/Repositories/FeatureFlagRepositoryTest.php
 
 		-
-			message: "#^Cannot access property \\$description on Illuminate\\\\Database\\\\Eloquent\\\\Model\\|null\\.$#"
+			message: "#^Cannot access property \\$description on mixed\\.$#"
 			count: 2
 			path: tests/Unit/Repositories/FeatureFlagRepositoryTest.php
 
@@ -356,7 +376,7 @@ parameters:
 			path: tests/Unit/Repositories/FeatureFlagRepositoryTest.php
 
 		-
-			message: "#^Cannot access property \\$name on Illuminate\\\\Database\\\\Eloquent\\\\Model\\|null\\.$#"
+			message: "#^Cannot access property \\$name on mixed\\.$#"
 			count: 2
 			path: tests/Unit/Repositories/FeatureFlagRepositoryTest.php
 
@@ -366,7 +386,7 @@ parameters:
 			path: tests/Unit/Repositories/FeatureFlagRepositoryTest.php
 
 		-
-			message: "#^Cannot access property \\$state on Illuminate\\\\Database\\\\Eloquent\\\\Model\\|null\\.$#"
+			message: "#^Cannot access property \\$state on mixed\\.$#"
 			count: 2
 			path: tests/Unit/Repositories/FeatureFlagRepositoryTest.php
 
@@ -386,6 +406,71 @@ parameters:
 			path: tests/Unit/Repositories/FeatureFlagRepositoryTest.php
 
 		-
-			message: "#^Unable to resolve the template type TValue in call to function expect$#"
-			count: 16
+			message: "#^Dynamic call to static method BaseCodeOy\\\\Pennant\\\\Services\\\\FeatureFlagService\\:\\:activate\\(\\)\\.$#"
+			count: 13
 			path: tests/Unit/Repositories/FeatureFlagRepositoryTest.php
+
+		-
+			message: "#^Dynamic call to static method BaseCodeOy\\\\Pennant\\\\Services\\\\FeatureFlagService\\:\\:active\\(\\)\\.$#"
+			count: 3
+			path: tests/Unit/Repositories/FeatureFlagRepositoryTest.php
+
+		-
+			message: "#^Dynamic call to static method BaseCodeOy\\\\Pennant\\\\Services\\\\FeatureFlagService\\:\\:activeThroughAnyGroup\\(\\)\\.$#"
+			count: 1
+			path: tests/Unit/Repositories/FeatureFlagRepositoryTest.php
+
+		-
+			message: "#^Dynamic call to static method BaseCodeOy\\\\Pennant\\\\Services\\\\FeatureFlagService\\:\\:activeThroughGroup\\(\\)\\.$#"
+			count: 1
+			path: tests/Unit/Repositories/FeatureFlagRepositoryTest.php
+
+		-
+			message: "#^Dynamic call to static method BaseCodeOy\\\\Pennant\\\\Services\\\\FeatureFlagService\\:\\:all\\(\\)\\.$#"
+			count: 7
+			path: tests/Unit/Repositories/FeatureFlagRepositoryTest.php
+
+		-
+			message: "#^Dynamic call to static method BaseCodeOy\\\\Pennant\\\\Services\\\\FeatureFlagService\\:\\:allAreActive\\(\\)\\.$#"
+			count: 1
+			path: tests/Unit/Repositories/FeatureFlagRepositoryTest.php
+
+		-
+			message: "#^Dynamic call to static method BaseCodeOy\\\\Pennant\\\\Services\\\\FeatureFlagService\\:\\:allAreInactive\\(\\)\\.$#"
+			count: 1
+			path: tests/Unit/Repositories/FeatureFlagRepositoryTest.php
+
+		-
+			message: "#^Dynamic call to static method BaseCodeOy\\\\Pennant\\\\Services\\\\FeatureFlagService\\:\\:deactivate\\(\\)\\.$#"
+			count: 2
+			path: tests/Unit/Repositories/FeatureFlagRepositoryTest.php
+
+		-
+			message: "#^Dynamic call to static method BaseCodeOy\\\\Pennant\\\\Services\\\\FeatureFlagService\\:\\:inactive\\(\\)\\.$#"
+			count: 1
+			path: tests/Unit/Repositories/FeatureFlagRepositoryTest.php
+
+		-
+			message: "#^Dynamic call to static method BaseCodeOy\\\\Pennant\\\\Services\\\\FeatureFlagService\\:\\:someAreActive\\(\\)\\.$#"
+			count: 1
+			path: tests/Unit/Repositories/FeatureFlagRepositoryTest.php
+
+		-
+			message: "#^Dynamic call to static method BaseCodeOy\\\\Pennant\\\\Services\\\\FeatureFlagService\\:\\:someAreInactive\\(\\)\\.$#"
+			count: 1
+			path: tests/Unit/Repositories/FeatureFlagRepositoryTest.php
+
+		-
+			message: "#^Unable to resolve the template type TValue in call to function expect$#"
+			count: 12
+			path: tests/Unit/Repositories/FeatureFlagRepositoryTest.php
+
+		-
+			message: "#^Access to an undefined property Tests\\\\Models\\\\User\\:\\:\\$is_high_traffic_customer\\.$#"
+			count: 1
+			path: tests/Unit/Services/FeatureFlagServiceTest.php
+
+		-
+			message: "#^Dynamic call to static method BaseCodeOy\\\\Pennant\\\\Services\\\\FeatureFlagService\\:\\:active\\(\\)\\.$#"
+			count: 3
+			path: tests/Unit/Services/FeatureFlagServiceTest.php
